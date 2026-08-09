@@ -243,8 +243,13 @@ ul {
     box-shadow: 0 4px 15px var(--shadow-color);
     border-radius: 4px;
     padding: 10px;
-    min-width: 120px;
+    min-width: 130px;
     z-index: 10;
+}
+
+.theme-dropdown {
+    max-height: 60vh;
+    overflow-y: auto;
 }
 
 .lang-dropdown.show, .theme-dropdown.show {

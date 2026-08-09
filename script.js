@@ -124,6 +124,7 @@ const i18n = {
 };
 
 let currentLang = 'el'; // Default language
+let Default_FontSize = '16px'; // Default language
 
 // Setup dynamic elements on load
 document.addEventListener('DOMContentLoaded', () => {
@@ -139,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedFont = localStorage.getItem('themeFont');
     if (savedFont) setThemeFont(savedFont);
 
-    const savedFontSize = localStorage.getItem('themeFontSize');
+    const savedFontSize = localStorage.getItem('themeFontSize') || Default_FontSize;
     if (savedFontSize) setThemeFontSize(savedFontSize);
 
     const savedImg = localStorage.getItem('profileImg');
