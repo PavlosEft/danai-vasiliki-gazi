@@ -124,7 +124,7 @@ const i18n = {
 };
 
 let currentLang = 'el'; // Default language
-let Default_FontSize = '16px'; // Default language
+let Default_FontSize = '14px'; // Default language
 
 // Setup dynamic elements on load
 document.addEventListener('DOMContentLoaded', () => {
