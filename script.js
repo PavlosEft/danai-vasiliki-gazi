@@ -134,14 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentLang = savedLang;
     }
 
-    const savedColor = localStorage.getItem('themeColor');
-    if (savedColor) setThemeColor(savedColor);
-
     const savedFont = localStorage.getItem('themeFont');
     if (savedFont) setThemeFont(savedFont);
-
-    const savedFontSize = localStorage.getItem('themeFontSize') || Default_FontSize;
-    if (savedFontSize) setThemeFontSize(savedFontSize);
 
     const savedImg = localStorage.getItem('profileImg');
     if (savedImg) document.getElementById('profile-img').src = savedImg;
@@ -178,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Form submission prevent default
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    document.getElementById('last-form').addEventListener('submit', function(e) {
         e.preventDefault();
         alert('Form submission simulated.');
         this.reset();
@@ -237,12 +231,19 @@ function setLanguage(lang) {
 
 // Theme Switcher - Colors
 function setThemeColor(colorTheme) {
-    if(colorTheme === 'dark') {
-        document.documentElement.removeAttribute('data-theme');
+    // Enable animation only on button click
+    document.documentElement.classList.add('theme-transition');
+    
+    if(colorTheme === 'light') {
+        document.documentElement.classList.add('light-theme');
     } else {
-        document.documentElement.setAttribute('data-theme', colorTheme);
+        document.documentElement.classList.remove('light-theme');
     }
-    localStorage.setItem('themeColor', colorTheme);
+    
+    // Disable animation after transition is done (300ms)
+    setTimeout(() => {
+        document.documentElement.classList.remove('theme-transition');
+    }, 300);
 }
 
 // Theme Switcher - Fonts
