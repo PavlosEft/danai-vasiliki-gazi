@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danai Vasiliki Gazi - Legal Services &amp; Mediation</title>
+</head>
+<body>
+    <!-- Setup initialized. Ready for the next steps. -->
+</body>
+</html><!DOCTYPE html>
+<html lang="en" data-theme="beige">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danai Vasiliki Gazi - Legal Services &amp; Mediation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" id="theme-font">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1 data-i18n="logo_name">Danai Vasiliki Gazi</h1>
+                <p class="subtitle" data-i18n="logo_subtitle">Legal Services &amp; Mediation</p>
+            </div>
+            
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Resume</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+306948419795" class="phone-link">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>+30 6948419795</span>
+                    </a>
+                    
+                    <div class="lang-selector">
+                        <button class="lang-btn" onclick="toggleLangMenu()">EN &#9662;</button>
+                        <div class="lang-dropdown" id="lang-dropdown">
+                            <a href="#" onclick="setLanguage('el')">EL</a>
+                            <a href="#" onclick="setLanguage('en')">EN</a>
+                            <a href="#" onclick="setLanguage('de')">DE</a>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-selector">
+                        <button class="theme-btn" onclick="toggleThemeMenu()" title="Theme Settings">&#9881;</button>
+                        <div class="theme-dropdown" id="theme-dropdown">
+                            <p>Colors</p>
+                            <div class="color-options">
+                                <span class="color-dot" style="background-color: #1c1b19; border: 1px solid #444;" onclick="setThemeColor('dark')" title="Dark Theme"></span>
+                                <span class="color-dot" style="background-color: #ffffff; border: 1px solid #ccc;" onclick="setThemeColor('light')" title="Light Theme"></span>
+                            </div>
+                            <p>Font</p>
+                             <div class="font-options">
+                                <button onclick="setThemeFont('Open Sans')">Sans</button>
+                                <button onclick="setThemeFont('Merriweather')">Serif</button>
+                                <button onclick="setThemeFont('Roboto')">Roboto</button>
+                                <button onclick="setThemeFont('Playfair Display')">Playfair</button>
+                            </div>
+                            <p>Size</p>
+                            <div class="font-options" style="display: flex; gap: 5px;">
+                                <button onclick="setThemeFontSize('12px')">S</button>
+                                <button onclick="setThemeFontSize('14px')">M</button>
+                                <button onclick="setThemeFontSize('16px')">L</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 data-i18n="hero_title">Expert Legal Support &amp; Professional Mediation</h2>
+            <p data-i18n="hero_desc">Protecting your rights with dedication and finding balanced solutions.</p>
+            <a href="#contact" class="btn btn-primary" data-i18n="hero_btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-section-container">
+                <h2 class="section-title about-section-title" data-i18n="about_title">Brief Resume</h2>
+                <div class="about-content-wrapper">
+                    <div class="about-image">
+                        <img src="IMG_2672-2.jpg" alt="Danai Vasiliki Gazi" id="profile-img" onclick="toggleProfileImage()" style="cursor: pointer; transition: opacity 0.3s ease;">
+                    </div>
+                    <p class="about-intro" data-i18n="about_intro">Danai Gazi is a Trainee Lawyer at the Athens Bar Association, specializing in Real Estate Law and Enforcement Law. She is a graduate of the Democritus University of Thrace Faculty of Law and is currently completing her Master's degree at the National and Kapodistrian University of Athens. Since the beginning of 2025, she serves as an Accredited Mediator in Civil and Commercial Law cases and works at Jure Law Firm as a Legal Trainee.</p>
+                    
+                    <div class="resume-highlights">
+                        <div class="resume-item">
+                            <h3 data-i18n="about_edu">Education</h3>
+                            <ul>
+                                <li data-i18n="edu_nkua">National &amp; Kapodistrian University of Athens - Master's degree, Public Law, Public Policies, Environmental Law (Oct 2025 - Present)</li>
+                                <li data-i18n="edu_duth">Democritus University of Thrace (D.U.Th.) - Law (2019 - 2023)</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h3 data-i18n="about_exp">Experience</h3>
+                            <ul>
+                                <li data-i18n="exp_med">Accredited Mediator - Self-employed (Jan 2025 - Present)</li>
+                                <li data-i18n="exp_jure">Legal Trainee - Jure Law Firm (Jan 2024 - Present)</li>
+                                <li data-i18n="exp_col">Columnist - Off Line Post (Mar 2023 - Apr 2024)</li>
+                            </ul>
+                        </div>
+                         <div class="resume-item">
+                            <h3 data-i18n="about_skills">Skills & Languages</h3>
+                            <p data-i18n="skills_desc">Legal Writing, Political Science. Fluent in English (Full professional proficiency) and German.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="services_title">Areas of Practice</h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; color: var(--primary-color);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 data-i18n="serv_1_title">Social Security Law</h3>
+                    <p data-i18n="serv_1_desc">Comprehensive legal advice and representation in matters concerning social security, pensions, and benefits.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; color: var(--primary-color);"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3 data-i18n="serv_2_title">Labor Law</h3>
+                    <p data-i18n="serv_2_desc">Handling employment disputes, contracts, dismissals, and ensuring compliance with labor regulations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; color: var(--primary-color);"><path d="M3 21h18"></path><path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2-4h14l2 4"></path><line x1="4" y1="21" x2="4" y2="10"></line><line x1="20" y1="21" x2="20" y2="10"></line><path d="M8 21v-4a2 2 0 0 1 4 0v4"></path></svg>
+                    </div>
+                    <h3 data-i18n="serv_3_title">Administrative Law</h3>
+                    <p data-i18n="serv_3_desc">Representation in cases involving public authorities, appeals against administrative acts, and regulatory compliance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 30px; height: 30px; color: var(--primary-color);"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3 data-i18n="serv_4_title">Commercial & Real Estate Law</h3>
+                    <p data-i18n="serv_4_desc">Specialized support in real estate transactions, property disputes, corporate matters, and commercial contracts.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-overlay"></div>
+        <div class="container contact-container">
+            <div class="contact-content">
+                <h2 class="section-title contact-title" data-i18n="contact_title">Get In Touch</h2>
+                <p class="contact-desc" data-i18n="contact_desc">We are always at your disposal for any legal support or mediation services.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <svg class="icon-medium" style="color: var(--secondary-color);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <div>
+                            <h4 data-i18n="contact_phone">Phone</h4>
+                            <p><a href="tel:+306948419795" style="color: inherit;">+30 6948419795</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <svg class="icon-medium" style="color: var(--secondary-color);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <div>
+                            <h4 data-i18n="contact_location">Location</h4>
+                            <p data-i18n="contact_address">Athens, Attiki, Greece<br>Athens Bar Association</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name" required data-i18n-placeholder="form_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required data-i18n-placeholder="form_email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Message" required data-i18n-placeholder="form_message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="form_submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p>&copy; <span id="current-year"></span> Danai Vasiliki Gazi. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
