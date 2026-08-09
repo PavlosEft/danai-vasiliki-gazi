@@ -670,6 +670,13 @@ ul {
         width: 100%;
     }
     
+    /* Fix dropdown menus overflow on mobile screens */
+    .lang-dropdown,
+    .theme-dropdown {
+        left: 0;
+        right: auto;
+    }
+    
     .hero-section {
         margin-top: 60px;
     }
