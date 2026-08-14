@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danai Vasiliki Gazi - Legal Services &amp; Mediation</title>
-</head>
-<body>
-    <!-- Setup initialized. Ready for the next steps. -->
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danai Vasiliki Gazi - Legal Services &amp; Mediation</title>
+    <meta name="description" content="Danai Vasiliki Gazi is a Trainee Lawyer and Accredited Mediator. Expert legal support and professional mediation in Athens.">
+    
+    <link rel="alternate" hreflang="el" href="?lang=el" />
+    <link rel="alternate" hreflang="en" href="?lang=en" />
+    <link rel="alternate" hreflang="de" href="?lang=de" />
+    <link rel="alternate" hreflang="x-default" href="?lang=el" />
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" id="theme-font">
 </head>
 <body>
 
-    <!-- Sticky Header -->
     <header class="site-header">
         <div class="container header-container">
             <div class="logo">
@@ -35,17 +31,31 @@
                     <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <a href="tel:+306948419795" class="phone-link">
+                    <a href="#" class="phone-link dyn-phone-link">
                         <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        <span>+30 6948419795</span>
+                        <span class="dyn-phone-text"></span>
                     </a>
+                    
+                    <div style="display: flex; gap: 18px; align-items: center;">
+                        <a href="#" class="phone-link dyn-wa-link social-icon-link" title="WhatsApp" target="_blank">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="phone-link dyn-viber-link social-icon-link" title="Viber" target="_blank">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </a>
+                    </div>
                     
                     <div class="lang-selector">
                         <button class="lang-btn" onclick="toggleLangMenu()">EN &#9662;</button>
                         <div class="lang-dropdown" id="lang-dropdown">
-                            <a href="#" onclick="setLanguage('el')">EL</a>
-                            <a href="#" onclick="setLanguage('en')">EN</a>
-                            <a href="#" onclick="setLanguage('de')">DE</a>
+                            <a href="javascript:void(0);" onclick="setLanguage('el')">EL</a>
+                            <a href="javascript:void(0);" onclick="setLanguage('en')">EN</a>
+                            <a href="javascript:void(0);" onclick="setLanguage('de')">DE</a>
                         </div>
                     </div>
                     
@@ -82,7 +92,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="first-section">
         <div class="first-overlay"></div>
         <div class="container first-content">
@@ -92,7 +101,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section section-padding">
         <div class="container">
             <div class="about-section-container">
@@ -129,7 +137,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services-section section-padding bg-light">
         <div class="container">
             <h2 class="section-title text-center" data-i18n="services_title">Areas of Practice</h2>
@@ -171,7 +178,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="last-section">
         <div class="last-overlay"></div>
         <div class="container last-container">
@@ -180,25 +186,42 @@
                 <p class="last-desc" data-i18n="contact_desc">We are always at your disposal for any legal support or mediation services.</p>
                 
                 <div class="last-info">
-                    <div class="last-info-item">
+                    <a href="#" class="last-info-item dyn-phone-link">
                         <svg class="icon-medium" style="color: var(--secondary-color);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         <div>
                             <h4 data-i18n="contact_phone">Phone</h4>
-                            <p><a href="tel:+306948419795" style="color: inherit;">+30 6948419795</a></p>
+                            <p class="dyn-phone-text"></p>
                         </div>
+                    </a>
+                    
+                    <div class="social-contact-buttons" style="display: flex; gap: 15px; margin-bottom: 25px; margin-left: 47px;">
+                        <a href="#" class="btn btn-primary dyn-wa-link social-btn-wa" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 15px;">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path>
+                            </svg>
+                            WhatsApp
+                        </a>
+                        <a href="#" class="btn btn-primary dyn-viber-link social-btn-viber" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 15px;">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Viber
+                        </a>
                     </div>
-                    <div class="last-info-item">
+                    <a href="#" class="last-info-item dyn-location-link" target="_blank">
                         <svg class="icon-medium" style="color: var(--secondary-color);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                         <div>
                             <h4 data-i18n="contact_location">Location</h4>
                             <p data-i18n="contact_address">Athens, Attiki, Greece<br>Athens Bar Association</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             
             <div class="last-form-container">
                 <form id="last-form" class="last-form">
+                    <h3 data-i18n="form_title" style="margin-bottom: 20px; color: var(--primary-color);">Send us a message</h3>
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Name" required data-i18n-placeholder="form_name">
                     </div>
@@ -214,13 +237,14 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container text-center">
             <p>&copy; <span id="current-year"></span> Danai Vasiliki Gazi. <span data-i18n="footer_rights">All rights reserved.</span></p>
         </div>
     </footer>
 
+    <script src="config.js"></script>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

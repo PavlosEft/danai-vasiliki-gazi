@@ -1,6 +1,4 @@
-/* CSS Variables for Theming */
 :root {
-    /* Dark Theme (Default) */
     color-scheme: dark;
     --primary-color: #c9a66b;
     --secondary-color: #e6c88a; 
@@ -19,7 +17,6 @@
 }
 
 html.light-theme {
-    /* Bright Light Theme */
     color-scheme: light;
     --primary-color: #2c3e50;
     --secondary-color: #c9a66b;
@@ -35,7 +32,6 @@ html.light-theme {
     --input-border: rgba(0, 0, 0, 0.2);
 }
 
-/* Reset & Basics */
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +52,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Dynamic transition class applied ONLY when switching themes via button */
 html.theme-transition body,
 html.theme-transition .first-overlay,
 html.theme-transition .last-overlay {
@@ -111,7 +106,6 @@ ul {
     margin: 10px auto 0;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -136,7 +130,6 @@ ul {
     width: 100%;
 }
 
-/* Icons */
 .icon-small {
     width: 16px;
     height: 16px;
@@ -151,7 +144,6 @@ ul {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(289deg) brightness(115%) contrast(105%);
 }
 
-/* Header & Navigation */
 .site-header {
     position: fixed;
     top: 0;
@@ -225,7 +217,6 @@ ul {
     color: var(--primary-color);
 }
 
-/* Dropdowns */
 .lang-selector, .theme-selector {
     position: relative;
 }
@@ -314,7 +305,6 @@ ul {
     color: var(--white);
 }
 
-/* Mobile Menu Button */
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -334,18 +324,17 @@ ul {
     transition: all 0.3s;
 }
 
-/* Hero Section */
 .first-section {
     position: relative;
     height: 100vh;
     min-height: 600px;
     display: flex;
     align-items: center;
-    background-image: url('7663534787.PNG'); /* Fallback/Placeholder */
+    background-image: url('7663534787.PNG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin-top: 70px; /* Offset for header */
+    margin-top: 70px;
 }
 
 .first-overlay {
@@ -376,7 +365,6 @@ ul {
     margin-bottom: 30px;
 }
 
-/* About Section */
 .about-section-title {
     text-align: center;
 }
@@ -440,7 +428,6 @@ ul {
     margin-bottom: 8px;
 }
 
-/* Services Section */
 .services-section {
     padding-top: 40px;
 }
@@ -497,11 +484,10 @@ ul {
     margin-bottom: 15px;
 }
 
-/* Contact Section */
 .last-section {
     position: relative;
     padding: 80px 0;
-    background-image: url('47894578989787.PNG'); /* Fallback/Placeholder */
+    background-image: url('47894578989787.PNG');
     background-size: cover;
     background-position: center;
     color: var(--first-text);
@@ -581,7 +567,6 @@ ul {
     background: rgba(201, 166, 107, 0.2);
 }
 
-/* Footer */
 .site-footer {
     background-color: #1a1a1a;
     color: #999;
@@ -589,7 +574,6 @@ ul {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
     .about-section-title {
         text-align: left;
@@ -638,9 +622,17 @@ ul {
         width: 45%;
         margin: 5px 15px 5px 0;
     }
+    
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+    
+    .logo .subtitle {
+        font-size: 0.7rem;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
     .mobile-menu-btn {
         display: flex;
     }
@@ -681,7 +673,6 @@ ul {
         width: 100%;
     }
     
-    /* Fix dropdown menus overflow on mobile screens */
     .lang-dropdown,
     .theme-dropdown {
         left: 0;
