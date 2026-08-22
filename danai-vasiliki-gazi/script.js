@@ -31,9 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedFont = localStorage.getItem('themeFont');
     if (savedFont) setThemeFont(savedFont);
 
-    const savedImg = localStorage.getItem('profileImg');
-    if (savedImg) document.getElementById('profile-img').src = savedImg;
-
     setLanguage(currentLang);
     
     document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -158,14 +155,4 @@ function setThemeFont(fontName) {
 function setThemeFontSize(size) {
     document.documentElement.style.setProperty('--base-font-size', size);
     localStorage.setItem('themeFontSize', size);
-}
-
-function toggleProfileImage() {
-    const img = document.getElementById('profile-img');
-    if (img.src.includes('IMG_2672-2.jpg')) {
-        img.src = '1760260188731.jpg';
-    } else {
-        img.src = 'IMG_2672-2.jpg';
-    }
-    localStorage.setItem('profileImg', img.src);
 }
